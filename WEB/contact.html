@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matias Rebolledo - CONTACT</title>
+
+    <!-- IMPORT CSS, BOOTSTRAP, FONTS, ETC -->
+    <!-- CDN IMPORT FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- IMPORT GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- IMPORT STYLES -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- HEADER + NAV SECTION -->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="./index.html">MR</a>
+            </div>
+            <!-- NAVBAR -->
+            <nav id="nav">
+                <ul>
+                    <!-- HEADERS NAVBAR  -->
+                    <!-- onClick ADDED TO JS -->
+                    <li><a href="./index.html" onclick="select()">HOME</a></li>
+                    <li><a href="./about.html" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#cv" onclick="select()">RESUME</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+                    <li><a href="./contact.html" onclick="select()">CONTACT ME</a></li>
+                </ul>
+            </nav>
+            <!-- RESPONSIVE NAVBAR CDN-->
+            <div class="nav-responsive" onclick="showHideMenu();">
+                <!-- IMPORT BARS FONTAWESOME -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- CONTACT ME SECTION -->
+    <section id="contact" class="contact">
+        <div class="container-contact">
+            <h2>CONTACT ME</h2>
+            <div class="row">
+                <div class="col">
+                    <!-- GET FORM-->
+                    <form action="#" method="get">
+                        <input type="text" id="name" name="name" placeholder="Name" required />
+                        <input type="email" id="email" name="email" placeholder="Email" required />
+                        <!-- RADIUS FOR TYPE OF JOB -->
+                        <br>
+                        <hr>
+                        <h3>CONTACT REASON:</h3>
+                        <input type="radio" id="fe" name="Front" value="Frontend" />
+                        <label for="fe">FRONTEND</label>
+                        <input type="radio" id="be" name="back" value="Backend" />
+                        <label for="be">BACKEND</label>
+                        <input type="radio" id="fs" name="full" value="Fullstack" />
+                        <label for="fs">FULLSTACK</label>
+                        <br>
+                        <hr>
+                        <h3>PROJECTS IN MIND:</h3>
+                        <input type="checkbox" value="Web-Developer" id="WD" name="project" />
+                        <label for="WD">Web Development </label>
+                        <input type="checkbox" value="QA" id="QA" name="project" />
+                        <label for="QA">QA Manual/ Auto</label>
+                        <input type="checkbox" value="UXUI" id="UXUI" name="project" />
+                        <label for="UXUI">UX/UI Design</label>
+                        <br>
+                        <hr>
+                        <!-- TEXT AREA -->
+                        <textarea class="form-control" id="textarea" cols="30" rows="10"
+                            placeholder="Enter your message"></textarea>
+                        <button id="btn-suscribir" type="button">SEND<i class="fa-solid fa-messages"><span
+                                    class="overlay"></span></i></button>
+                    </form>
+                </div>
+                <div class="col">
+                    <img src="./img/contactfondo.jpg" alt="profile">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WEBSITE FOOTER COMPONENT -->
+    <footer>
+        <a href="./contact.html" class="home">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="RRSS">
+            <a href="https://www.linkedin.com/in/mrebolledowork/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/MatiWolFo" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <div class="copyright">
+            <h3>Copyright &#169; Matias Rebolledo - 2022.-</h3>
+        </div>
+    </footer>
+    <!-- IMPORT SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matias Rebolledo - HOME</title>
+
+    <!-- IMPORT CSS, BOOTSTRAP, FONTS, ETC -->
+    <!-- CDN IMPORT FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- IMPORT GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- IMPORT STYLES -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- HEADER + NAV SECTION -->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="./index.html">MR</a>
+            </div>
+            <!-- NAVBAR -->
+            <nav id="nav">
+                <ul>
+                    <!-- HEADERS NAVBAR  -->
+                    <!-- onClick ADDED TO JS -->
+                    <li><a href="./index.html" onclick="select()">HOME</a></li>
+                    <li><a href="./about.html" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#cv" onclick="select()">RESUME</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+                    <li><a href="./contact.html" onclick="select()">CONTACT ME</a></li>
+                </ul>
+            </nav>
+            <!-- RESPONSIVE NAVBAR CDN-->
+            <div class="nav-responsive" onclick="showHideMenu();">
+                <!-- IMPORT BARS FONTAWESOME -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- HOME SECTION -->
+    <section id="home" class="home">
+        <div class="container-banner">
+            <!-- PROFILE PICTURE -->
+            <div class="container-img">
+                <img src="./img/MAR1.png" alt="profile">
+            </div>
+            <!-- INTRO TEXT -->
+            <h1>MATIAS REBOLLEDO</h1>
+            <br>
+            <hr>
+            <h2>FULL STACK JR. DEVELOPER</h2>
+            <br>
+            <hr>
+            <h3>JAVA - REACT.JS</h3>
+            <!-- SOCIAL MEDIA ANCHORS ADDED FONTAWEOSOME-->
+            <div class="RRSS">
+                <a href="https://www.linkedin.com/in/mrebolledowork/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/MatiWolFo" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- WEBSITE FOOTER COMPONENT -->
+    <footer>
+        <a href="./index.html" class="home">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="RRSS">
+            <a href="https://www.linkedin.com/in/mrebolledowork/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/MatiWolFo" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <div class="copyright">
+            <h3>Copyright &#169; Matias Rebolledo - 2022.-</h3>
+        </div>
+    </footer>
+    <!-- IMPORT SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
