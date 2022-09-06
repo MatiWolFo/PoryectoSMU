@@ -1,10 +1,10 @@
-# Proyecto
+## Link Proyecto
 
 Git-Page:
 TBC
 
 ## Contexto
-- Desarrollar una p·gina web tipo portafolio para usar como evidencia del desarrollo de habilidades del bootcamp SMU.
+- Desarrollar una p√°gina web tipo portafolio responsivo para usar como evidencia del desarrollo de habilidades del bootcamp SMU.
 
 ## Librerias y frameworks usados
 - HTML
@@ -12,12 +12,12 @@ TBC
 - Boostrap
 - JS pendiente
 
-# Avances
+## Avances
 
 ## Vistas
 
 #### 01-08-2022
-- CraciÛn de repositorio para control de versionamiento
+- Craci√≥n de repositorio para control de versionamiento
 - Vistas 1 y 2 en proceso de desarrollo
-- EnvÌo de hipervÌnculo por Plataforma AIEP para registrar el enlace del repositorio, entrega pendiente
+- Env√≠o de hiperv√≠nculo por Plataforma AIEP para registrar el enlace del repositorio, entrega pendiente
 
