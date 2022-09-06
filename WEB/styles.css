@@ -154,9 +154,15 @@ html {
 /* ABOUT ME SECTION*/
 /* GENERAL STYLE */
 .about {
-    background-color: #1e2326;
-    color: #fff;
-    padding: 50px 20px;
+    background: linear-gradient(to top,
+            rgba(30, 35, 38, 0.8),
+            rgba(30, 35, 38, 1)),
+        url(img/fondo.jpg);
+    background-size: cover;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 .about .bio {
