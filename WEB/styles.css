@@ -85,7 +85,7 @@ html {
             rgba(30, 35, 38, 1)),
         url(img/fondo.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     color: white;
     display: flex;
     align-items: center;
@@ -97,6 +97,8 @@ html {
     background-color: #1e2326;
     max-width: 350px;
     margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
     border-radius: 40px;
 }
@@ -262,8 +264,8 @@ html {
     margin-bottom: 10px;
 }
 
-/* CV BUTTON STYLES */
-.about button {
+/* CV BUTTON STYLES N DOWNLOAD ACTION*/
+.about a {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -276,10 +278,11 @@ html {
     position: relative;
     z-index: 10;
     border-radius: 10px;
+    text-decoration: none;
 }
 
-/* BUTTON ANIMATION */
-.about button:hover {
+/* DOWNLOAD BUTTON ANIMATION */
+.about a:hover {
     background-color: #1CB698;
     transition: 0.5s;
 }
@@ -327,7 +330,7 @@ html {
 
 /* FORM INPUTS */
 .contact .col input {
-    display: block;
+    display: inline-block;
     width: 100%;
     padding: 18px;
     margin-top: 10px;
@@ -338,7 +341,7 @@ html {
 }
 
 .contact .col textarea {
-    display: block;
+    display: inline-block;
     width: 100%;
     padding: 18px;
     margin-top: 20px;
@@ -461,16 +464,19 @@ footer .home:hover {
 /* -------------------------------------- */
 /* NAVBAR RESPONSIVITY */
 @media screen and (max-width:980px) {
+
     /* HIDES NAVBAR IF MOBILE */
     nav {
         display: none;
     }
+
     /* SHOWS ICON INSTEAD OF NAVBAR */
-    .nav-responsive{
+    .nav-responsive {
         display: block;
     }
+
     /* ADDS ITEMS TO ICON */
-    nav.responsive{
+    nav.responsive {
         display: block;
         position: absolute;
         right: 0;
@@ -478,28 +484,34 @@ footer .home:hover {
         background-color: #252A2E;
         width: 180px;
     }
+
     /* ALWAYS SHOWS THE LIST MENU */
-    nav.responsive ul{
+    nav.responsive ul {
         display: block !important;
     }
+
     /* MOBILE NAVBAR STYLE */
-    nav.responsive ul li{
+    nav.responsive ul li {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
 }
+
 /* ABOUT ME AND CONTACT RESPONSIVITY */
 @media screen and (max-width:700px) {
-    .about .row{
+    .about .row {
         display: block;
     }
-    .about .row .col{
+
+    .about .row .col {
         width: fit-content;
     }
-    .contact .row{
+
+    .contact .row {
         display: block;
     }
-    .contact .row .col{
+
+    .contact .row .col {
         width: 100%;
     }
 }
