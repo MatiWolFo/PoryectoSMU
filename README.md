@@ -13,8 +13,8 @@ https://github.com/MatiWolFo/PoryectoSMU
 ## Librerias y frameworks usados
 - HTML
 - CSS
-- Boostrap
-- FontAweosome
+- Bootstrap
+- FontAwesome
 - Google Fonts
 - JS pendiente
 
