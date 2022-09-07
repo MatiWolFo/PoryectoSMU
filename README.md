@@ -1,7 +1,10 @@
 ## Link Proyecto
 
 Git-Page:
-TBC
+https://matiwolfo.github.io/PoryectoSMU/index.html
+
+Git Repository:
+https://github.com/MatiWolFo/PoryectoSMU
 
 ## Contexto
 - Desarrollar una página web tipo portafolio responsivo para usar como evidencia del desarrollo de habilidades del bootcamp SMU.
@@ -10,8 +13,8 @@ TBC
 ## Librerias y frameworks usados
 - HTML
 - CSS
-- Boostrap
-- FontAweosome
+- Bootstrap
+- FontAwesome
 - Google Fonts
 - JS pendiente
 
