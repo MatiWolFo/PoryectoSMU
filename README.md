@@ -21,6 +21,7 @@ https://github.com/MatiWolFo/PoryectoSMU
 ## Avances
 #### 08-09-2022
 - Corrección de bugs menores y adición de nueva vista
+- Verificación de código HTML y CSS con W3C Validator
 #### 06-09-2022
 - Integración de responsive básico
 - UPDATE de repositorio Git
