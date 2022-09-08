@@ -35,7 +35,7 @@ https://github.com/MatiWolFo/PoryectoSMU
 - Envío de hipervínculo por Plataforma AIEP para registrar el enlace del repositorio, entrega pendiente
 
 ## Vistas
-#### 04-09-2022
+#### 07-09-2022
 - Desarrollo vista RESUME (resume.html)
 #### 04-09-2022
 - Desarrollo vista CONTACT (contact.html)
