@@ -209,6 +209,7 @@ html {
     font-size: 28px;
     font-family: 'Work Sans';
     margin-bottom: 40px;
+    margin-left: 70px;
 }
 
 /* REMOVE LIST BULLETS */
@@ -217,7 +218,7 @@ html {
 }
 
 .about .row .col ul li {
-    margin: 12px 0px;
+    margin: 30px 50px;
 }
 
 /* PERSONAL INFORMATION COLORS N EFFECTS*/
@@ -247,6 +248,7 @@ html {
     background-color: #252A2E;
     border-radius: 10px;
     margin: 0 15px 15px 0;
+    margin-left: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,13 +299,14 @@ html {
         url(img/fondo.jpg);
     background-size: cover;
     height: 100%;
+    width: 100%;
     color: white;
     display: flex;
     align-items: center;
 }
 
 .resume .container-resume {
-    max-width: 1100px;
+    width: 1100px;
     margin: auto;
 }
 
@@ -329,8 +332,8 @@ html {
 }
 
 .resume .row .col {
-    width: 49%;
-    padding: 0 20px;
+    width: 50%;
+    padding: 0 30px;
 }
 
 /* SECTION TITLE STYLE */
@@ -353,7 +356,16 @@ html {
 .resume .row .item {
     padding: 25px;
     margin-bottom: 30px;
+    border-radius: 30px;
     background-color: #252A2E;
+    position: relative;
+}
+/* HOVER ANIMATON TO ITEM BOXES */
+.resume .row .item:hover {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #444749;
+    transition: 0.7s;
     position: relative;
 }
 
@@ -497,6 +509,19 @@ html {
     background-color: #252A2E;
     color: #fff;
     font-size: 18px;
+    width: 100%;
+}
+/* 2 LINES ISSUE FIXED WITH POSITION ABSOLUTE */
+.contact .col label{
+    border: 2px solid #1CB698;
+    width: 170px;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+}
+/* RADIO AND CHECKBOX POSITION FIXED */
+.contact .col input#fe, #be, #fs, #WD, #QA, #UXUI{
+    margin-left: 10%;
 }
 
 .contact .col textarea {
