@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matias Rebolledo - RESUME</title>
+
+    <!-- IMPORT CSS, BOOTSTRAP, FONTS, ETC -->
+    <!-- CDN IMPORT FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- IMPORT GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- IMPORT STYLES -->
+    <link rel="stylesheet" href="./WEB/styles.css" />
+</head>
+
+<body>
+    <!-- HEADER + NAV SECTION -->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="./index.html">MR</a>
+            </div>
+            <!-- NAVBAR -->
+            <nav id="nav">
+                <ul>
+                    <!-- HEADERS NAVBAR  -->
+                    <!-- onClick ADDED TO JS -->
+                    <li><a href="./index.html" onclick="select()">HOME</a></li>
+                    <li><a href="./about.html" onclick="select()">ABOUT ME</a></li>
+                    <!-- <li><a href="#skills" onclick="select()">SKILLS</a></li> -->
+                    <li><a href="./resume.html" onclick="select()">RESUME</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+                    <li><a href="./contact.html" onclick="select()">CONTACT ME</a></li>
+                </ul>
+            </nav>
+            <!-- RESPONSIVE NAVBAR CDN-->
+            <div class="nav-responsive" onclick="showHideMenu();">
+                <!-- IMPORT BARS FONTAWESOME -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- RESUME SECTION -->
+    <section id="resume" class="resume">
+        <div class="container-resume">
+            <h2>MY RESUME</h2>
+            <div class="row">
+                <!-- EDUCATION COL SECTION -->
+                <div class="left col">
+                    <h3>EDUCATION & PREP.</h3>
+                    <div class="left item">
+                        <h4>JAVA Fullstack Jr.</h4>
+                        <span class="place">Generation Chile</span>
+                        <span class="date">2022</span>
+                        <p>
+                            Training on fundamental competencies, <span>JAVA Spring</span> Backend and <span>REACT.JS
+                                VSCode</span> Frontend focused.
+                        </p>
+                        <!-- CONNECTION LINES AND DOT -->
+                        <div class="leftconnector">
+                            <div class="leftcircle"></div>
+                        </div>
+                    </div>
+                    <div class="left item">
+                        <h4>EFL-ESP Specialist</h4>
+                        <span class="place">Platzi English Academy</span>
+                        <span class="date">2021-2022</span>
+                        <p>
+                            <span>Advanced C1 English</span> training Certification.
+                        </p>
+                        <div class="leftconnector">
+                            <div class="leftcircle"></div>
+                        </div>
+                    </div>
+                    <div class="left item">
+                        <h4>EHS Engineer</h4>
+                        <span class="place">DUOC UC, Chile</span>
+                        <span class="date">2017</span>
+                        <p>
+                            Environment, Health and Safety <span>(EHS)</span> Degree Certification.
+                        </p>
+                        <div class="leftconnector">
+                            <div class="leftcircle"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROFESSIONAL COL SECTION -->
+                <div class="right col">
+                    <h3>WORK & PROJECT EXP.</h3>
+                    <div class="right item">
+                        <h4>Project ID: 'Semillita'</h4>
+                        <span class="place">Generation Chile</span>
+                        <span class="date">2022</span>
+                        <p>
+                            Graduation project, <span>kids focused and friendly website</span> to learn the first steps
+                            and
+                            fundamental knowledge about programming.
+                        </p>
+                        <!-- CONNECTION LINES AND DOT -->
+                        <div class="rightconnector">
+                            <div class="rightcircle"></div>
+                        </div>
+                    </div>
+                    <div class="right item">
+                        <h4>ENG Coach & Professor</h4>
+                        <span class="place">Freelance</span>
+                        <span class="date">2020-2022</span>
+                        <p>
+                            <span>English language coaching sessions (EFL/ESP)</span> focused on Spanish speakers from
+                            different
+                            countries from the LatAm region, while being both abroad and in Chile.
+                        </p>
+                        <div class="rightconnector">
+                            <div class="rightcircle"></div>
+                        </div>
+                    </div>
+                    <div class="right item">
+                        <h4>LQA-FQA Tester</h4>
+                        <span class="place">Keywords Studios IE</span>
+                        <span class="date">2019-2020</span>
+                        <p>
+                            LatAm and European Spanish <span>LQA/FQA tester</span> and constant support to different
+                            <span>colleagues
+                                and
+                                cell members</span>, whether they are part of the same team or not and regarding to both
+                            language
+                            and tech issues.
+                        </p>
+                        <div class="rightconnector">
+                            <div class="rightcircle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WEBSITE FOOTER COMPONENT -->
+    <footer>
+        <a href="./resume.html" class="home">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="RRSS">
+            <a href="https://www.linkedin.com/in/mrebolledowork/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/MatiWolFo" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <div class="copyright">
+            <h3>Copyright &#169; Matias Rebolledo - 2022.-</h3>
+        </div>
+    </footer>
+    <!-- IMPORT SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="./WEB/script.js"></script>
+</body>
+
+</html>

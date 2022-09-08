@@ -288,6 +288,164 @@ html {
 }
 
 /* ----------------------------------------------- */
+/* RESUME SECTION*/
+/* RESUME BACKGROUND AND GENERAL */
+.resume {
+    background: linear-gradient(to top,
+            rgba(30, 35, 38, 0.8),
+            rgba(30, 35, 38, 1)),
+        url(img/fondo.jpg);
+    background-size: cover;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.resume .container-resume {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* GENERAL FONT STYLE */
+.resume h2 {
+    font-size: 40px;
+    font-family: 'Work Sans';
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.resume h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* ROW AND COL STYLE */
+.resume .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .row .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+/* SECTION TITLE STYLE */
+.resume .row .col h3 {
+    font-size: 28px;
+    font-family: 'Work Sans';
+    margin-bottom: 25px;
+}
+
+/* LEFT COL */
+.resume .row .left col {
+    border-right: 2px solid #252A2E;
+}
+
+/* RIGHT COL */
+.resume .row .right col {
+    border-left: 2px solid #252A2E;
+}
+
+.resume .row .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+/* ITEM TITLE FONT */
+.resume .row .item h4 {
+    font-family: 'Work Sans';
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* ITEM NAME FONT */
+.resume .row .item .place {
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ITEM DATE FONT */
+.resume .row .item .date {
+    display: block;
+    color: #73beaf;
+    margin-bottom: 10px;
+}
+
+/* DESCRIPTION FONT STYLES */
+.resume .row .item p {
+    line-height: 24px;
+}
+
+/* DESCRIPTION MARKUP FONT */
+.resume p span {
+    color: #1CB698;
+    font-weight: bold;
+}
+
+/* TIMELINE STYLES */
+.resume .row .left {
+    border-right: 3px solid #1CB698;
+    margin-right: 20px;
+}
+
+.resume .row .right {
+    border-left: 3px solid #1CB698;
+    margin-left: 20px;
+}
+
+/* TIMELINE CONNECTOR N DOT STYLES */
+.resume .row .item .leftconnector {
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.resume .row .item .rightconnector {
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.resume .row .item .leftconnector .leftcircle {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #73beaf;
+    float: right;
+    position: relative;
+    bottom: 5px;
+}
+
+.resume .row .item .rightconnector .rightcircle {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #73beaf;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/* ----------------------------------------------- */
 /* CONTACT ME SECTION*/
 /* CONTACT BACKGROUND AND GENERAL */
 .contact {
@@ -329,6 +487,7 @@ html {
 }
 
 /* FORM INPUTS */
+/*  */
 .contact .col input {
     display: inline-block;
     padding: 18px;
