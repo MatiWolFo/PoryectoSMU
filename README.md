@@ -19,24 +19,28 @@ https://github.com/MatiWolFo/PoryectoSMU
 - JS pendiente
 
 ## Avances
-#### 06-08-2022
+#### 08-09-2022
+- Corrección de bugs menores y adición de nueva vista
+#### 06-09-2022
 - Integración de responsive básico
 - UPDATE de repositorio Git
 - Publicación GitPages
-#### 05-08-2022
+#### 05-09-2022
 - Integración de diseño y visual STYLES.CSS
-#### 04-08-2022
+#### 04-09-2022
 - Integración FORM GET a vista CONTACT
-#### 01-08-2022
+#### 01-09-2022
 - Cración de repositorio para control de versionamiento
 - Vistas 1 y 2 en proceso de desarrollo
 - Envío de hipervínculo por Plataforma AIEP para registrar el enlace del repositorio, entrega pendiente
 
 ## Vistas
-#### 04-08-2022
+#### 07-09-2022
+- Desarrollo vista RESUME (resume.html)
+#### 04-09-2022
 - Desarrollo vista CONTACT (contact.html)
-#### 03-08-2022
+#### 03-09-2022
 - Desarrollo vista ABOUT (about.html)
-#### 03-08-2022
+#### 03-09-2022
 - Desarrollo vista HOME (index.html)
 
