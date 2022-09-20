@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
     console.log("DOM Welcome");
     //CATCH THE FORM TO RESET IT
-    let form = document.querySelector(".contact-form");
+    let form = document.querySelector(".ideas-form");
     //ADD RESPONSIVITY TO THE BUTTON
     let button = document.getElementById("btn-suscribir");
     //ADDS LISTENER TO CLICK EVENT
@@ -24,9 +24,8 @@ window.addEventListener('DOMContentLoaded', (e) => {
                 throw new Error("Please, introduce a valid data information");
             }
             //CATCH ELEMENTS USING FUNCTIONS
-            //CATCH RADIUS AND CHECKBOX
-            let stack = getStack();
-            let reason = getReason();
+            //CATCH CHECKBOX
+            let feedback = getFeedback();
             //CATCH TEXTAREA
             let userMessage = getUserMessage();
             //CREATE THE ARRAY WITH THE VARIABLES
@@ -34,8 +33,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
                 name,
                 lastName,
                 email,
-                stack,
-                reason,
+                feedback,
                 userMessage,
                 contactDate: (new Date()).toISOString()
             };
@@ -57,7 +55,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
 //ASYNC SAVE FUNCTION
 async function saveForm(fullForm) {
     //PERSIST THE DATA ON FIREBASE
-    const url = "https://cursosmu-b2545-default-rtdb.firebaseio.com/database.json";
+    const url = "https://cursosmu-b2545-default-rtdb.firebaseio.com/ideas.json";
     //FETCH AWAIT POST TYPE IN BODY
     const respuesta = await fetch(url, {
         method: "POST",
@@ -65,39 +63,26 @@ async function saveForm(fullForm) {
     });
     const data = await respuesta.json();
     //CALL THE SUCCESS FUNCTION
-    successMessage("Thanks for your message.");
+    successMessage("Thanks for your feedback and ideas.");
 }
 
 //FUNCTION TO GET THE CHECKBOXES
-function getReason() {
+function getFeedback() {
     //GETS THE INPUTS USING QUERYSELECTOR
-    let inputReason = document.querySelectorAll("input[name='project']:checked");
+    let inputFeedback = document.querySelectorAll("input[name='project']:checked");
     //CREATE ARRAY TO PERSIST THE ANSWERS
-    let arrReason = [];
+    let arrFeedback = [];
     //LOOPS THE ARRAY AND PUSHES THE SELECTIONS INTO THE LET
-    for (let i = 0; i < inputReason.length; i++) {
-        const reason = inputReason[i].value;
-        arrReason.push(reason);
+    for (let i = 0; i < inputFeedback.length; i++) {
+        const feedback = inputFeedback[i].value;
+        arrFeedback.push(feedback);
     }
     //ERROR VALIDATION
-    if (inputReason == null) {
+    if (inputFeedback == null) {
         throw new Error("Please, introduce a valid data information input");
     }
     //RETURNS THE FILLED ARRAY
-    return arrReason;
-}
-
-//FUNCTION TO GET THE RADIUS
-function getStack() {
-    //GETS THE INPUTS USING QUERYSELECTOR
-    let inputStack = document.querySelector("input[name='stack']:checked");
-    //ERROR VALIDATION
-    if (inputStack == null) {
-        throw new Error("Please, introduce a valid data information input");
-    }
-    const stack = inputStack.value;
-    //RETURNS THE FILLED ARRAY
-    return stack;
+    return arrFeedback;
 }
 
 //FUNCTION TO GET THE TEXTAREA
@@ -120,9 +105,9 @@ function errorMessage(message) {
     const ul = document.querySelector("#form-mensaje-error ul");
     //CLEAN THE ERROR MESSAGES ON SCREEN
     ul.innerHTML = "";
-    li.innerHTML = "";
     //CREATES THE ELEMENT IN THE HTML
     const li = document.createElement("li");
+    li.innerHTML = "";
     //AND ADDS AN ERROR STRING
     const liText = document.createTextNode(message);
     //ADDS THE TEXT INTO THE ELEMENT AS A CHILD
@@ -138,9 +123,9 @@ function successMessage(message) {
     const ul = document.querySelector("#form-mensaje-exitoso ul");
     //CLEAN THE MESSAGES ON SCREEN
     ul.innerHTML = "";
-    li.innerHTML = "";
     //CREATES THE ELEMENT IN THE HTML
     const li = document.createElement("li");
+    li.innerHTML = "";
     //AND ADDS AN SUCCESS STRING
     const liText = document.createTextNode(message);
     //ADDS THE TEXT INTO THE ELEMENT AS A CHILD

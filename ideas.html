@@ -58,7 +58,13 @@
                 </div>
                 <div class="col">
                     <!-- GET FORM-->
-                    <form action="#" method="get">
+                    <div id="form-mensaje-exitoso" class="alert alert-success" role="alert">
+                        <ul></ul>
+                    </div>
+                    <div id="form-mensaje-error" class="alert alert-danger" role="alert">
+                        <ul></ul>
+                    </div>
+                    <form class="ideas-form" action="#" method="get">
                         <input type="text" id="name" name="name" placeholder="First Name" required />
                         <input type="text" id="lastName" name="lastName" placeholder="Last name" required />
                         <input type="email" id="email" name="email" placeholder="Email" required /> <br>
@@ -102,8 +108,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-    <script src="./WEB/scriptNav.js"></script>
     <script src="./WEB/scriptIdeas.js"></script>
+    <script src="./WEB/scriptNav.js"></script>
 </body>
 
 </html>

@@ -467,6 +467,7 @@ html {
     bottom: 4px;
 }
 
+/* FIXES RESPONSIVITY TO MOBILE VIEW */
 @media screen and (max-width:480px){
 
     .resume .row {
@@ -649,6 +650,7 @@ html {
     transition: 0.5s;
 }
 
+/* FIXES RESPONSIVITY TO MOBILE VIEW */
 @media screen and (max-width:480px){
     .ideas .col {
         width: 90%;
