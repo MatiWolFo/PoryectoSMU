@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matias Rebolledo - CONTACT</title>
+    <title>Matias Rebolledo - IDEAS</title>
 
     <!-- IMPORT CSS, BOOTSTRAP, FONTS, ETC -->
     <!-- CDN IMPORT FONTAWESOME -->
@@ -35,7 +35,7 @@
                     <!-- onClick ADDED TO JS -->
                     <li><a href="./index.html" onclick="select()">HOME</a></li>
                     <li><a href="./about.html" onclick="select()">ABOUT ME</a></li>
-                    <!-- <li><a href="#skills"  onclick="select()">SKILLS</a></li> -->
+                    <!-- <li><a href="#skills" onclick="select()">SKILLS</a></li> -->
                     <li><a href="./resume.html" onclick="select()">RESUME</a></li>
                     <li><a href="./ideas.html" onclick="select()">IDEAS</a></li>
                     <li><a href="./contact.html" onclick="select()">CONTACT ME</a></li>
@@ -48,61 +48,42 @@
             </div>
         </header>
     </div>
-    <!-- CONTACT ME SECTION -->
-    <section id="contact" class="contact">
-        <div class="container-contact">
-            <h2>CONTACT ME</h2>
+    <!-- IDEAS SECTION -->
+    <section id="ideas" class="ideas">
+        <div class="container-idea">
+            <h2>GIVE ME YOUR FEEDBACK OR YOUR IDEAS</h2>
             <div class="row">
                 <div class="col">
+                    <img src="./WEB/img/boba.png" alt="profile">
+                </div>
+                <div class="col">
                     <!-- GET FORM-->
-                    <div id="form-mensaje-exitoso" class="alert alert-success" role="alert">
-                        <ul></ul>
-                    </div>
-                    <div id="form-mensaje-error" class="alert alert-danger" role="alert">
-                        <ul></ul>
-                    </div>
-                    <form class="contact-form" action="#" method="get">
+                    <form action="#" method="get">
                         <input type="text" id="name" name="name" placeholder="First Name" required />
                         <input type="text" id="lastName" name="lastName" placeholder="Last name" required />
-                        <input type="email" id="email" name="email" placeholder="Email" required />
-                        <!-- RADIUS FOR TYPE OF JOB -->
+                        <input type="email" id="email" name="email" placeholder="Email" required /> <br>
                         <br>
                         <hr>
-                        <h3>CONTACT REASON:</h3>
-                        <label for="fe">FRONTEND</label>
-                        <input type="radio" id="fe" name="stack" value="Frontend" class="radio" />
-                        <label for="be">BACKEND</label>
-                        <input type="radio" id="be" name="stack" value="Backend" class="radio" />
-                        <label for="fs">FULLSTACK</label>
-                        <input type="radio" id="fs" name="stack" value="Fullstack" class="radio" />
-                        <br>
-                        <hr>
-                        <!-- CHECKBOX FOR PROJECTS -->
-                        <h3>PROJECTS IN MIND:</h3>
-                        <label for="WD">Web Development</label>
-                        <input type="checkbox" value="Web-Developer" id="WD" name="project" class="checkbox" />
-                        <label for="QA">QA Manual/ Auto</label>
-                        <input type="checkbox" value="QA" id="QA" name="project" class="checkbox" />
-                        <label for="UXUI">UX/UI Design</label>
-                        <input type="checkbox" value="UXUI" id="UXUI" name="project" class="checkbox" />
+                        <h3>YOU WOULD LIKE TO GIVE ME:</h3>
+                        <label for="feedback">Some feedback</label>
+                        <input type="checkbox" value="Feedback" id="feedback" name="project" class="checkbox" />
+                        <label for="idea">A new idea</label>
+                        <input type="checkbox" value="idea" id="idea" name="project" class="checkbox" />
                         <br>
                         <hr>
                         <!-- TEXT AREA -->
                         <textarea class="form-control" id="textarea" cols="30" rows="10"
-                            placeholder="Tell me about why would you like to contact me..."></textarea>
+                            placeholder="What is that you would like to say..."></textarea>
                         <button id="btn-suscribir" type="button">SEND<i class="fa-solid fa-messages"><span
                                     class="overlay"></span></i></button>
                     </form>
-                </div>
-                <div class="col">
-                    <img src="./WEB/img/contactfondo.jpg" alt="profile">
                 </div>
             </div>
         </div>
     </section>
     <!-- WEBSITE FOOTER COMPONENT -->
     <footer>
-        <a href="./contact.html" class="home">
+        <a href="./ideas.html" class="home">
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="RRSS">
@@ -121,8 +102,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-    <script src="./WEB/scriptContact.js"></script>
     <script src="./WEB/scriptNav.js"></script>
+    <script src="./WEB/scriptIdeas.js"></script>
 </body>
 
 </html>

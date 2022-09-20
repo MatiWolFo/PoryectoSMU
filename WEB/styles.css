@@ -9,6 +9,10 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* SLIDE EFFECT ON MENU */
 html {
     scroll-behavior: smooth;
@@ -33,7 +37,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 40px;
 }
 
 /* LEFT NAME LOGO */
@@ -184,9 +188,10 @@ html {
 .about .bio p {
     font-size: x-large;
     line-height: 22px;
-    margin-bottom: 20px;
     text-align: center;
     margin-bottom: 100px;
+    width: 90%;
+    padding-left: 10%;
 }
 
 .about .bio p span {
@@ -209,12 +214,13 @@ html {
     font-size: 28px;
     font-family: 'Work Sans';
     margin-bottom: 40px;
-    margin-left: 70px;
+    text-align: center;
 }
 
 /* REMOVE LIST BULLETS */
 .about .row .col ul {
     list-style: none;
+    text-align: justify;
 }
 
 .about .row .col ul li {
@@ -341,6 +347,7 @@ html {
     font-size: 28px;
     font-family: 'Work Sans';
     margin-bottom: 25px;
+    text-align: center;
 }
 
 /* LEFT COL */
@@ -360,6 +367,7 @@ html {
     background-color: #252A2E;
     position: relative;
 }
+
 /* HOVER ANIMATON TO ITEM BOXES */
 .resume .row .item:hover {
     padding: 25px;
@@ -374,6 +382,7 @@ html {
     font-family: 'Work Sans';
     font-size: 25px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* ITEM NAME FONT */
@@ -395,6 +404,7 @@ html {
 /* DESCRIPTION FONT STYLES */
 .resume .row .item p {
     line-height: 24px;
+    text-align: justify;
 }
 
 /* DESCRIPTION MARKUP FONT */
@@ -457,6 +467,196 @@ html {
     bottom: 4px;
 }
 
+@media screen and (max-width:480px){
+
+    .resume .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .resume .row .col {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .resume h3 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .resume .row .item h4 {
+        font-family: 'Work Sans';
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .resume .row .item p {
+        line-height: 24px;
+        text-align: justify;
+    }
+    .resume .row .left {
+        border-right: 0px;
+        margin-right: 0px;
+    }
+    
+    .resume .row .right {
+        border-left: 0px;
+        margin-left: 0px;
+    }
+
+    .resume .row .item .leftconnector {
+        display: none;
+    }
+    
+    .resume .row .item .rightconnector {
+        display: none;
+    }
+    
+    .resume .row .item .leftconnector .leftcircle {
+        display: none;
+    }
+    
+    .resume .row .item .rightconnector .rightcircle {
+        display: none;
+    }
+}
+
+
+/* ----------------------------------------------- */
+/* ideasS SECTION*/
+/* ideasS BACKGROUND AND GENERAL */
+
+.ideas {
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: white;
+    padding: 50px 0;
+}
+
+.ideas .container-ideas {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* CONTACT TITLES STYLES */
+.ideas h2 {
+    font-size: 40px;
+    font-family: 'Work Sans';
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.ideas h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/* ROWS AND COLUMNS STYLE */
+
+.ideas .col {
+    width: 75%;
+    padding-left: 25%;
+    position: relative;
+}
+
+/* FORM INPUTS */
+/*  */
+.ideas .col input {
+    display: inline-block;
+    padding: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+}
+
+/* 2 LINES ISSUE FIXED WITH POSITION ABSOLUTE */
+.ideas .col label {
+    border: 2px solid #1CB698;
+    width: 140px;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+}
+
+.ideas .col textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 18px;
+    margin-top: 20px;
+    border: none;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* HOVER EFFECT TO INPUTS */
+.ideas #name:hover,
+#email:hover,
+#lastName:hover {
+    color: #1e2326;
+    background-color: white;
+    transition: 0.5s;
+}
+
+/* HOVER EFFECT TO TEXTAREA BOX */
+.ideas .col textarea:hover {
+    color: #1e2326;
+    background-color: white;
+    transition: 0.5s;
+}
+
+/* PROFILE IMG */
+.ideas .col img {
+    min-width: 60%;
+    max-width: 90%;
+    opacity: 0.4;
+    transition: 0.7s;
+    margin-bottom: 60px;
+    padding-left: 30%;
+}
+
+/* PROFILE IMG EFFECT*/
+.ideas .col img:hover {
+    opacity: 1;
+    transition: 0.7s;
+}
+
+/* SEND BUTTON STYLES */
+.ideas button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 50px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+/* BUTTON ANIMATION */
+.ideas button:hover {
+    background-color: #1CB698;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:480px){
+    .ideas .col {
+        width: 90%;
+        padding-left: 10%;
+        position: relative;
+    }
+}
+
 /* ----------------------------------------------- */
 /* CONTACT ME SECTION*/
 /* CONTACT BACKGROUND AND GENERAL */
@@ -485,6 +685,7 @@ html {
 .contact h3 {
     padding-top: 30px;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 /* ROWS AND COLUMNS STYLE */
@@ -511,16 +712,24 @@ html {
     font-size: 18px;
     width: 100%;
 }
+
 /* 2 LINES ISSUE FIXED WITH POSITION ABSOLUTE */
-.contact .col label{
+.contact .col label {
     border: 2px solid #1CB698;
     width: 170px;
     border-radius: 10px;
     padding: 5px;
     position: absolute;
+    text-align: center;
 }
+
 /* RADIO AND CHECKBOX POSITION FIXED */
-.contact .col input#fe, #be, #fs, #WD, #QA, #UXUI{
+.contact .col input#fe,
+#be,
+#fs,
+#WD,
+#QA,
+#UXUI {
     margin-left: 10%;
 }
 
