@@ -16,9 +16,17 @@ https://github.com/MatiWolFo/PoryectoSMU
 - Bootstrap
 - FontAwesome
 - Google Fonts
-- JS pendiente
+- JS vanilla
+- Firebase
 
 ## Avances
+#### 20-09-2022
+- Agregado segundo FORM a vista IDEAS
+- Implementación de JS en formulario IDEAS
+#### 19-09-2022
+- Corrección de bugs y adición de nueva vista
+- Verificación de código HTML y CSS con W3C Validator
+- Implementación de JS en formulario CONTACT
 #### 08-09-2022
 - Corrección de bugs menores y adición de nueva vista
 - Verificación de código HTML y CSS con W3C Validator
@@ -36,6 +44,8 @@ https://github.com/MatiWolFo/PoryectoSMU
 - Envío de hipervínculo por Plataforma AIEP para registrar el enlace del repositorio, entrega pendiente
 
 ## Vistas
+#### 19-09-2022
+- Desarrollo vista IDEAS (ideas.html)
 #### 07-09-2022
 - Desarrollo vista RESUME (resume.html)
 #### 04-09-2022
