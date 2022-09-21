@@ -25,10 +25,12 @@ https://github.com/MatiWolFo/PoryectoSMU
 - Implementación de JS en formulario IDEAS
 - Validación final de codigo HTML y CSS usando WC Validator
 - Creación de Git TAG
+- Corrección de bug Validación scriptIdeas.js
 #### 19-09-2022
 - Corrección de bugs y adición de nueva vista
 - Verificación de código HTML y CSS con W3C Validator
 - Implementación de JS en formulario CONTACT
+- Corección e implementación de @media para responsibidad
 #### 08-09-2022
 - Corrección de bugs menores y adición de nueva vista
 - Verificación de código HTML y CSS con W3C Validator

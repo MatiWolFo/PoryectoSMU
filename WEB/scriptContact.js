@@ -12,15 +12,15 @@ window.addEventListener('DOMContentLoaded', (e) => {
             //CATCH ELEMENTS WITH ID
             let name = document.getElementById("name").value;
             //ADDS VERIFICATION IF
-            if (name == null) {
+            if (name.length < 2 || null) {
                 throw new Error("Please, introduce a valid data information");
             }
             let lastName = document.getElementById("lastName").value;
-            if (lastName == null) {
+            if (lastName.length < 2 || null) {
                 throw new Error("Please, introduce a valid data information");
             }
             let email = document.getElementById("email").value;
-            if (email == null) {
+            if (email.length < 2 || null) {
                 throw new Error("Please, introduce a valid data information");
             }
             //CATCH ELEMENTS USING FUNCTIONS
