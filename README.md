@@ -21,6 +21,8 @@ https://github.com/MatiWolFo/PoryectoSMU
 
 ## Avances
 #### 20-09-2022
+- Vistas modificadas a opción personal
+#### 20-09-2022
 - Agregado segundo FORM a vista IDEAS
 - Implementación de JS en formulario IDEAS
 - Validación final de codigo HTML y CSS usando WC Validator
